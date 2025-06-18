@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'app_data'
+
 # This class handles product initialization and validation
 class Product
   attr_reader :name, :code, :price
@@ -9,6 +11,10 @@ class Product
     @code = code.to_s.upcase
     @price = price.to_f.round(2)
     validate!
+  end
+
+  def self.find_by_code(product_code)
+    AppData.products.find { |p| p.code == product_code }
   end
 
   private

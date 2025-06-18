@@ -7,3 +7,7 @@ Layout/IndentationWidth:
 
 Layout/EndOfLine:
   EnforcedStyle: lf
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
