@@ -5,7 +5,7 @@ class BaseOffer
   attr_reader :title, :is_active
 
   def initialize(title:, is_active:)
-    @name = title
+    @title = title
     @is_active = is_active
     validate!
   end
@@ -17,6 +17,6 @@ class BaseOffer
   private
 
   def validate!
-    raise ArgumentError, 'Title cannot be empty' if title.nil?
+    raise ArgumentError, 'Title cannot be empty' if title.empty?
   end
 end

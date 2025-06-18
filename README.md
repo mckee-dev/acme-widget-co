@@ -7,16 +7,16 @@ This project requires **Ruby 2.7.6** or higher.
 
 ## Usage
 
+### App Data
+This module holds data for the some of the app's classes
 ### Product Class
-Basic usage of the `Product` class:
-```ruby
-product = Product.new(name: "Book", code: "R01", price: 32.95)
-```
+This class handles product initialization, validation and related methods
 ### Delivery Rule Class
-Basic usage of the `Delivery Rule` class:
-```ruby
-delivery_rule = DeliveryRule.new(min_price: 50, max_price: 90, cost: 2.95)
-```
+This class handles delivery rule initialization, validation, and its associated methods
+### Offers Class
+Base Offer Class serves as a base for all the offers, whereas Red Widget Offer class handles the specific discount logic as required
+### Pricing Context Class
+This class acts as a single interface for all the app data to be included in the basket
 
 ## 🧪 Testing
 
