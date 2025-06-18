@@ -17,6 +17,24 @@ This class handles delivery rule initialization, validation, and its associated 
 Base Offer Class serves as a base for all the offers, whereas Red Widget Offer class handles the specific discount logic as required
 ### Pricing Context Class
 This class acts as a single interface for all the app data to be included in the basket
+### Basket Class
+This initialised with the product catalogue, delivery charge rules, and offers. It also contains relevant methods for adding items to the basket and returning the total cost of the basket.
+
+## Assumptions
+
+**Offer Application**
+
+"Buy 1 red widget, get 2nd half price" applies to every 2nd unit
+
+Example: 3 red widgets = 1 full discount (3/2 = 1 in integer division)
+
+**Delivery Calculation**
+
+Based on post-discount subtotal
+
+**Rounding**
+
+Monetary values rounded to 2 decimal places
 
 ## 🧪 Testing
 
