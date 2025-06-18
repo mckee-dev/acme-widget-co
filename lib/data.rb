@@ -9,4 +9,12 @@ module Data
       Product.new(name: 'Blue Widget', code: 'B01', price: 7.95)
     ]
   end
+
+  def self.delivery_rules
+    [
+      DeliveryRule.new(min_price: 0, max_price: 50, cost: 4.95),
+      DeliveryRule.new(min_price: 50, max_price: 90, cost: 2.95),
+      DeliveryRule.new(min_price: 90, max_price: Float::INFINITY, cost: 0)
+    ]
+  end
 end

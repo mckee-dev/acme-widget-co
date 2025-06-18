@@ -12,6 +12,11 @@ Basic usage of the `Product` class:
 ```ruby
 product = Product.new(name: "Book", code: "R01", price: 32.95)
 ```
+### Delivery Rule Class
+Basic usage of the `Delivery Rule` class:
+```ruby
+delivery_rule = DeliveryRule.new(min_price: 50, max_price: 90, cost: 2.95)
+```
 
 ## 🧪 Testing
 
