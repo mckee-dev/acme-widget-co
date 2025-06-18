@@ -1,0 +1,9 @@
+# This line handles the practices for proper code formatting
+Layout/LineLength:
+  Max: 100
+
+Layout/IndentationWidth:
+  Width: 2
+
+Layout/EndOfLine:
+  EnforcedStyle: lf
